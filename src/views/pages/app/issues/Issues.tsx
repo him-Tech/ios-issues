@@ -12,9 +12,9 @@ import { Audience, textColorVariants } from "src/views";
 import { BaseURL } from "src/App";
 import { useAuth } from "src/views/pages/app/authenticate/AuthContext";
 import Loading from "src/components/common/Loading";
-import catimg from "../../../../assets/Mascot.png";
+
+// import catimg from "src/assets/Mascot.png";
 import { ShowApiError } from "../../../../components/common/ShowApiError";
-import { StatusCodes } from "http-status-codes";
 
 interface IssuesProps {
   audience: Audience;
@@ -78,7 +78,7 @@ export function Issues(props: IssuesProps) {
                 ))
               ) : (
                 <div className="flex justify-center gap-2 sm:text-2xl text-xl items-center font-medium">
-                  <img src={catimg} className="size-20 sm:size-24 object-contain" alt="" />
+                  {/*<img src={catimg} className="size-20 sm:size-24 object-contain" alt="" />*/}
                   No issues found!
                 </div>
               )}

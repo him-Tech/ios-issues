@@ -14,7 +14,7 @@ interface FaqItemProps {
 
 export function FaqItem(props: FaqItemProps) {
   return (
-    <div className={`rounded-xl overflow-hidden transition-all z-20 bg-primaryBg duration-300 ${props.isOpen ? "virtuous-card" : ""}`}>
+    <div className={`rounded-xl relative overflow-hidden transition-all z-20 bg-primaryBg duration-300 ${props.isOpen ? "virtuous-card" : ""}`}>
       <button className="w-full !px-4 sm:!px-6 py-4 flex justify-between sm:items-center" onClick={() => props.onToggle(props.index)}>
         <span className={`${props.isOpen ? "text-primary-user" : "text-white"} text-base xl:text-lg text-left 2xl:text-[22px] 3xl:text-[25px] font-michroma`}>
           {props.faq.title}

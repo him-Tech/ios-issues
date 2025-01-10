@@ -21,7 +21,7 @@ export function PageTitle(props: PageTitleProps) {
         className="absolute pointer-events-none sm:max-w-[80%] w-full lg:max-w-[75%] xl:max-w-[802px] 3xl:max-w-[1020px] object-contain -translate-x-1/2 left-1/2 -z-10 top-[4%] opacity-40 md:opacity-30"
       />
       <img src={props.owner.avatarUrl} alt="Logo" className="w-16 rounded-full md:h-20 md:w-20 xl:w-[109px] h-16 xl:h-[109px]" />
-      <h1 className="relative text-center mx-auto  main-heading !mt-3">
+      <h1 className="relative text-center mx-auto max-w-[800px] main-heading !mt-3">
         {capitalize(props.owner.id.login)}/
         <span className="bg-gradient-to-r from-[#FF518C] to-[#66319B]  text-transparent bg-clip-text">{capitalize(props.repository.id.name)}</span>
       </h1>

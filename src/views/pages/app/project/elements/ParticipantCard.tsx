@@ -18,10 +18,10 @@ export function ParticipantCard(props: ParticipantCardProps) {
             className="rounded-full border border-white 3xl:w-[231px] w-[150px] h-[150px] xl:w-[200px] xl:h-[200px] 3xl:h-[231px] object-cover mb-2 xl:mb-4"
           />
         </ExternalLink>
-        <div className="!bg-secondary text-white rounded-full !pl-6 !pr-3 py-1 justify-between flex">
-          <span className="text-xs md:text-sm 3xl:text-base">{props.maintainer.mascotAlt}</span>{" "}
+        <div className="!bg-secondary text-white rounded-full !pl-6 !pr-3 py-1 items-center justify-between flex">
+          <h5 className="text-xs md:text-sm 3xl:text-base  max-w-[155px]">{props.maintainer.mascotAlt}</h5>{" "}
           <img
-            className="max-w-10 md:max-w-12 h-auto xl:max-w-16 3xl:max-w-[79px] w-full object-contain -mt-10 3xl:-mt-16"
+            className="max-w-10 md:max-w-12 h-auto xl:max-w-16 xl:min-h-[90px]  3xl:max-w-[79px] w-full object-contain -mt-10 3xl:-mt-16"
             src={props.maintainer.mascot}
             alt=""
           />{" "}
